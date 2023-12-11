@@ -1,0 +1,63 @@
+<main class="px-3 flex items-center justify-center" [@slideInFromRight]>
+    <article class="bg-neutral-400/10 w-3/4 text-neutral-600 shadow-2xl mt-5 rounded-lg p-4">
+        <!-- Title -->
+        <h1 class="font-bold text-neutral-700 text-center">Proyecto: Sistema de Restaurante</h1>
+
+        <!-- Objective -->
+        <section>
+            <mat-divider></mat-divider>
+            <h3 class="text-neutral-500 font-semibold text-lg">Objetivo:</h3>
+            <p class="text-base">Desarrollar una aplicación o sistema que permita simular el manejo de clientes y
+                solicitudes para un restaurante de comida rápida haciendo uso de <strong>Estructuras de Datos</strong>
+                cómo las <a href="#" class="links">Pilas</a> y <a href="#" class="links">Colas</a> para dar
+                funcionalidad al sistema.</p>
+        </section>
+        <!-- Alcance -->
+        <section>
+            <mat-divider></mat-divider>
+            <h3 class="text-neutral-500 font-semibold text-lg">Alcance:</h3>
+            <p class="text-base">Crear un sistema que permita manejar el sistema de pedidos y el sistema de la fila de
+                clientes esperando. El sistema de pedidos debe poder administrar la creación de cada pedido y añadir las
+                posibilidades de completar y eliminar dichos pedidos, en base a este sistema se cambiará el sistema de
+                clientes que muestra la fila esperando a realizar su pedido.</p>
+        </section>
+        <!-- Funcionalidades -->
+        <section>
+            <mat-divider></mat-divider>
+            <h3 class="text-neutral-500 font-semibold text-lg">Funcionalidades:</h3>
+            <ul class="list-disc w-full pl-5">
+                <li>
+                    <h4 class="font-medium">Registro de pedidos</h4>
+                    <p>El sistema debe mostrar un registro de cada pedido siguiendo una serie de pasos interactivos que
+                        llenen una orden final.</p>
+                </li>
+                <li>
+                    <h4 class="font-medium">Mostrar pedidos</h4>
+                    <p>El sistema debe tener un apartado donde muestre todos los pedidos, máximo 4 activos para no
+                        saturar la cocina.</p>
+                </li>
+                <li>
+                    <h4 class="font-medium">Organizar pedidos</h4>
+                    <p>El sistema debe mostrar los pedidos activos y los pedidos ya completados.</p>
+                </li>
+                <li>
+                    <h4 class="font-medium">Eliminar pedidos</h4>
+                    <p>En la vista de pedidos, se debe tener la opción de cancelar o eliminar pedidos.</p>
+                </li>
+                <li>
+                    <h4 class="font-medium">Manejar extras en el pedido</h4>
+                    <p>El sistema debe permitir al cliente hacer solicitudes extra a sus pedidos que incrementer su
+                        orden y por ende el costo de la misma.</p>
+                </li>
+            </ul>
+        </section>
+        <ul class="flex gap-3">
+            <li>
+                <a routerLink="/DataStructures/stacks" mat-raised-button color="primary">Registrar una Orden</a>
+            </li>
+            <li>
+                <a routerLink="/DataStructures/stacks" mat-raised-button color="primary">Preparar una orden</a>
+            </li>
+        </ul>
+    </article>
+</main>
