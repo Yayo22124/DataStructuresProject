@@ -1,7 +1,14 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { NgModule } from '@angular/core';
+import { PrepareOrderComponent } from './pages/prepare-order/prepare-order.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: PrepareOrderComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
