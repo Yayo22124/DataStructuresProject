@@ -1,0 +1,48 @@
+<main class="px-3 flex flex-col items-center justify-center" [@slideInFromBottom]>
+    <form [formGroup]="orderForm" (ngSubmit)="onSubmit()" class="bg-orange-400/40 flex flex-col items-center justify-center text-black  w-3/4 shadow-2xl mt-5 rounded-lg p-4">
+        <h1>Construye tu hamburguesa!</h1>
+        <mat-checkbox formControlName="pan" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/bollo.png" alt="tocino" class="h-9">
+                Pan
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="tocino" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/tocino.png" alt="tocino" class="h-9">
+                Tocino
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="tomate" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/tomate.png" alt="tocino" class="h-9">
+                Tomate
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="lechuga" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/lechuga.png" alt="tocino" class="h-9">
+                Lechuga
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="carne" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/carne.png" alt="tocino" class="h-9">
+                Carne
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="picante" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/chile.png" alt="tocino" class="h-9">
+                Picante
+            </div>
+        </mat-checkbox>
+        <mat-checkbox formControlName="queso" color="primary">
+            <div class="flex items-center gap-5">
+                <img src="assets/queso.png" alt="tocino" class="h-9">
+                Queso
+            </div>
+        </mat-checkbox>
+        <button type="submit" mat-raised-button color="primary" class="w-1/4 mt-5">Crear Orden</button>
+    </form>
+</main>

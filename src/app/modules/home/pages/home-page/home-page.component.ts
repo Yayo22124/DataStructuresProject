@@ -1,3 +1,5 @@
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
 import { AnimationsService } from 'src/app/core/services/animations/animations.service';
 import { Component } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
@@ -8,7 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
   selector: 'app-home-page',
   standalone: true,
   animations: [AnimationsService.slideInFromBottom],
-  imports: [MatDividerModule, MatButtonModule, MatIconModule],
+  imports: [MatDividerModule, MatButtonModule, MatIconModule, RouterLink, RouterLinkActive],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
